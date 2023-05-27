@@ -2,11 +2,8 @@ import inquirer from 'inquirer';
 import fs from 'fs';
 //import path  from 'path ';
 import * as path from 'path';
-// const fs = require("fs");
-// const path = require('path');
-// const inquirer = require("inquirer");
 // const generateMarkdown = require("./utils/generateMarkdown");
-const generateMarkdown = import("./utils/generateMarkdown")
+//const generateMarkdown = import("./utils/generateMarkdown")
 
 // array of questions for user
 const questions = [
@@ -14,11 +11,11 @@ const questions = [
         type: 'input',
         message: 'What is your Project name?',
         name: 'projectname',
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'What is your location?',
-    //     name: 'location',
+    },
+    {
+        type: 'input',
+        message: 'What is your location?',
+        name: 'location',
     // },
     // {
     //     type: 'editor',
@@ -72,24 +69,28 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
-    fs.appendFile('log.txt',
-        `${data.projectname}`,
-         (err) =>
-         err ? console.error(err) : console.log('Saved!')
-        )
+function writeToFile(data) {
+    console.log(data.projectname);
+    console.log(data.location);
+    // fs.appendFile('log.txt',
+    //     `${data.projectname}`,
+    //      (err) =>
+    //      err ? console.error(err) : console.log('Saved!')
+    //     )
 }
 
 // function to initialize program
-//function init() {
-const init = () => {
-//node index.js
-inquirer.prompt([
-     ...questions
-])
-.then(() =>
+//async function init() {
+//const getData = await 
+function init() {
+inquirer.prompt(questions)
+.then(data => 
+//await(() =>
+    // console.log(data.projectname);
+    // console.log(data.location);
     writeToFile(data)
-)
+    //return data
+);
 };
 
 // function call to initialize program

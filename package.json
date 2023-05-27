@@ -1,14 +1,16 @@
 {
   "name": "static-site",
   "version": "1.0.0",
-  "description": "",
+  "description": "A professional README generator",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "John Walton",
+  "license": "MIT",
   "dependencies": {
-    "inquirer": "^6.3.1"
+    "inquirer": "^9.2.6",
+    "path": "^0.12.7"
   }
 }
