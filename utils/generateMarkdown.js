@@ -1,22 +1,36 @@
 // function to generate markdown for README
-// function generateMarkdown(data) {
 //const generateMarkdown = (data) => {
-  //const generateMarkdown = () =>
-  export function generateMarkdown (data) {
+export function generateMarkdown (data) {
+  // let index = licence.findIndex(e => e.value === data.licence);
+  // if (index !== -1) {
+  //     console.log('licenceName: ' + licence[index].name);
+  //     licenceName = licence[index].name;
+  //     console.log('licenceName: ' + licenceName);
+  // 
   return `# ${data.title}
-  [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSBoudrias%2FInquirer.js.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FSBoudrias%2FInquirer.js?ref=badge_shield)
+  ![licence badge](${data.licence}?style=flat-square)
   ## Description
   ${data.description}
   ## Installation
+  ${data.install}
   ## Usage
+  ${data.usage}
   ## API
+  ${data.api}
   ## Roadmap
+  ${data.roadmap}
   ## Credits
+  ${data.credits}
   ## License
+  ${data.licence}
+  `;
 
-`;
-//console.log('generateMarkdown is selfAware')
 }
+    // let index = licence.findIndex(e => e.value === data.licence);
+    // if (index !== -1) {
+    //     console.log('licenceName: ' + licence[index].name);
+    //     licenceName = licence[index].name;
+    // }
 
 //module.exports = generateMarkdown; // this is CommonJS not ES6
 //export function generateMarkdown() // ESmodules

@@ -1,11 +1,17 @@
-# Apollo Moon Launch
-  [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSBoudrias%2FInquirer.js.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FSBoudrias%2FInquirer.js?ref=badge_shield)
+# Artemis Lunar Landing
+  ![licence badge](https://img.shields.io/badge/licence-NONE-lightgrey?style=flat-square)
   ## Description
-  Blah
+  blah
   ## Installation
+  undefined
   ## Usage
+  undefined
   ## API
+  undefined
   ## Roadmap
+  undefined
   ## Credits
+  undefined
   ## License
-
+  https://img.shields.io/badge/licence-NONE-lightgrey
+  

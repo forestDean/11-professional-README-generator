@@ -3,6 +3,7 @@ import fs from 'fs';
 //import path  from 'path ';
 import * as path from 'path';
 import {generateMarkdown} from './utils/generateMarkdown.js'; //named import
+import {licence} from './utils/licenceObject.js'; //named import
 //const generateMarkdown = require("./utils/generateMarkdown");
 //const generateMarkdown = import("./utils/generateMarkdown.js") // *THIS CAUSES CONSOLE TO NOT PAUSE*
 
@@ -37,10 +38,12 @@ const questions = [
         waitUserInput: true,
     },
     {
-        type: 'input',
+        type: 'list',
         message: 'License',
         name: 'licence',
+        pageSize: 14,
         default: 'MIT',
+        choices: licence
     // },
     // {
     //     type: 'input',
@@ -94,13 +97,14 @@ function writeToFile(data) {
     console.log(data.description);
     console.log(data.summary);
     console.log(data.licence);
+    console.log('index: ' + licence.indexOf(data.licence));
     let markup = generateMarkdown(data);
     
 
      // fs.writeFile('log.text', markup,
     fs.writeFile('generated--README.md', markup,
        (err) =>
-         err ? console.error(err) : console.log('Successfully written to generated--README.md')
+         err ? console.error(err) : console.log('Successfully commited.')
         )
 
 }
