@@ -4,91 +4,10 @@ import chalk from 'chalk';
 //import path  from 'path ';
 import * as path from 'path';
 import {generateMarkdown} from './utils/generateMarkdown.js'; //named import
-import {licence} from './utils/licenceObject.js'; //named import
+import {questions} from './utils/questionsObject.js'; //named import
+const ui = new inquirer.ui.BottomBar();
 
-// array of questions for user
-const questions = [
-    {
-        type: 'input',
-        message: 'What is your project title?',
-        name: 'title',
-        // filter: (title) => {
-        //     title.toLowerCase().split(' ')
-        //     // // .split(' ')
-        //     //.map(word) => {
-        //     .map(function(word) {
-        //         //return (word.charAt(0).toUpperCase() + word.slice(1)); 
-        //         return word.replace(word[0], word[0].toUpperCase());
-        //         //return title.join(' ');  
-        //     });
-        //      return title.join(' '); 
 
-        // }
-    },
-    {
-        type: 'input',
-        message: 'Write a brief description.',
-        name: 'description',
-    },
-    {
-        type: 'editor',
-        message: 'Write a summary about yourself?',
-        name: 'summary',
-        waitUserInput: true,
-    },
-    {
-        type: 'list',
-        message: 'License',
-        name: 'licence',
-        //pageSize: 14,
-        default: 'MIT',
-        choices: licence,
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'What is your email address?',
-    //     name: 'email',
-    //     // validate: function (email) {
-      
-    //     //     valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
-    
-    //     //     if (valid) {
-    //     //       console.log("Great job");
-    //     //         return true;
-    //     //     } else {
-    //     //         console.log(".  Please enter a valid email")
-    //     //         return false;
-    //     //     }
-    // },
-    // {
-    //     type: 'number',
-    //     message: 'What is your phone number?',
-    //     name: 'phone',
-    //     //validate:
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'What is your LinkedIn URL?',
-    //     name: 'linkedin',
-    //     default: 'https://www.'
-    //     //validate:
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'What is your GitHub URL?',
-    //     name: 'github',
-    //     default: 'https://www.'
-    //    // validate:
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'What is your website URL?',
-    //     name: 'website ',
-    //     default: 'https://www.'
-    //     // validate:
-    }
-
-];
 
 // function to write README file
 function writeToFile(data) {
@@ -102,9 +21,9 @@ function writeToFile(data) {
 // function to initialize program
 //function init() {
     const init = async () => {
-        console.log(chalk.white.bgBlue.bold('Welcome to the README generator...'));
-        //const data =
-    
+        console.log(chalk.white.bgGreen.bold('Welcome to the README generator...'));
+        ui.log.write('...here we go...');
+
     inquirer
         .prompt(questions)
         .then(data => 
