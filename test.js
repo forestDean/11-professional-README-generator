@@ -2,8 +2,9 @@ import inquirer from 'inquirer';
 import fs from 'fs';
 //import path  from 'path ';
 import * as path from 'path';
-// const generateMarkdown = require("./utils/generateMarkdown");
-//const generateMarkdown = import("./utils/generateMarkdown")
+import generateMarkdown from './utils/generateMarkdown.js'
+//const generateMarkdown = require("./utils/generateMarkdown");
+//const generateMarkdown = import("./utils/generateMarkdown.js") // *THIS CAUSES CONSOLE TO NOT PAUSE*
 
 // array of questions for user
 const questions = [
@@ -93,11 +94,13 @@ function writeToFile(data) {
     console.log(data.description);
     console.log(data.summary);
     console.log(data.licence);
-    fs.writeFile('log.text', data.title,
+    //generateMarkdown(data);
     
-    // fs.writeFile('generateREADME.md', data.title,
+
+     fs.writeFile('log.text', data.title,
+    //fs.writeFile('generated--README.md', generateMarkdown,
        (err) =>
-         err ? console.error(err) : console.log('Saved!')
+         err ? console.error(err) : console.log('Successfully written to generated--README.md')
         )
 
 }
@@ -105,7 +108,11 @@ function writeToFile(data) {
 // function to initialize program
 //async function init() {
 //const getData = await 
-function init() {
+//function init() {
+const init = async () => {
+    console.log('Welcome to the README generator...');
+    //const data =
+
 inquirer
     .prompt(questions)
     .then(data => 
@@ -114,7 +121,7 @@ inquirer
         writeToFile(data)
         //return data
     )
-    .then(() => console.log('Successfully written to generateMarkdown.js'))
+    .then(() => console.log('Successfully written to writeToFile()'))
     .catch((error) => {
         if (error.isTtyError) {
           // Prompt couldn't be rendered in the current environment
@@ -122,6 +129,7 @@ inquirer
           // Something else went wrong
         }
     });
+    
  };
 
 // function call to initialize program
