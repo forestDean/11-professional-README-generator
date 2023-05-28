@@ -2,7 +2,7 @@ import inquirer from 'inquirer';
 import fs from 'fs';
 //import path  from 'path ';
 import * as path from 'path';
-import generateMarkdown from './utils/generateMarkdown.js'
+import {generateMarkdown} from './utils/generateMarkdown.js'; //named import
 //const generateMarkdown = require("./utils/generateMarkdown");
 //const generateMarkdown = import("./utils/generateMarkdown.js") // *THIS CAUSES CONSOLE TO NOT PAUSE*
 
@@ -94,11 +94,11 @@ function writeToFile(data) {
     console.log(data.description);
     console.log(data.summary);
     console.log(data.licence);
-    //generateMarkdown(data);
+    let markup = generateMarkdown(data);
     
 
-     fs.writeFile('log.text', data.title,
-    //fs.writeFile('generated--README.md', generateMarkdown,
+     // fs.writeFile('log.text', markup,
+    fs.writeFile('generated--README.md', markup,
        (err) =>
          err ? console.error(err) : console.log('Successfully written to generated--README.md')
         )
