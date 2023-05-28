@@ -11,6 +11,7 @@ export function generateMarkdown (data) {
   ![licence badge](${data.licence}?style=flat-square)
   ## Description
   ${data.description}
+  ## Table of Contents
   ## Installation
   ${data.install}
   ## Usage
@@ -21,11 +22,24 @@ export function generateMarkdown (data) {
   ${data.roadmap}
   ## Credits
   ${data.credits}
+  ## Contributing 
+  ## Tests 
+  ## Questions
   ## License
   ${data.licence}
   `;
 
 }
+// * Description 
+// * Table of Contents 
+// * Installation 
+// * Usage 
+// * License 
+// * Contributing 
+// * Tests 
+// * Questions
+
+
     // let index = licence.findIndex(e => e.value === data.licence);
     // if (index !== -1) {
     //     console.log('licenceName: ' + licence[index].name);

@@ -1,5 +1,6 @@
 import inquirer from 'inquirer';
 import fs from 'fs';
+import chalk from 'chalk';
 //import path  from 'path ';
 import * as path from 'path';
 import {generateMarkdown} from './utils/generateMarkdown.js'; //named import
@@ -101,7 +102,7 @@ function writeToFile(data) {
 // function to initialize program
 //function init() {
     const init = async () => {
-        console.log('Welcome to the README generator...');
+        console.log(chalk.white.bgBlue.bold('Welcome to the README generator...'));
         //const data =
     
     inquirer
