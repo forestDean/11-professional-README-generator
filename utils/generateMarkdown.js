@@ -10,11 +10,19 @@ export function generateMarkdown (data) {
   return `# ${data.title}
   ![licence badge](${data.licence}?style=flat-square)
   ## Description
+  <a name="description"></a>
   ${data.description}
+
   ## Table of Contents
+    [Description](#description)
+    [Installation](#installation)
+
   ## Installation
+  <a name="installation"></a>
   ${data.install}
+
   ## Usage
+  <a name="usage"></a>
   ${data.usage}
   ## API
   ${data.api}
