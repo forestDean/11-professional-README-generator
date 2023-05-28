@@ -10,6 +10,7 @@
   "author": "John Walton",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^5.2.0",
     "inquirer": "^9.2.6",
     "path": "^0.12.7"
   }
