@@ -10,7 +10,8 @@ const ui = new inquirer.ui.BottomBar();
 
 
 // function to write README file
-function writeToFile(data) {
+// function writeToFile(markup) {
+function writeToFile(data) {  
     let markup = generateMarkdown(data);
     fs.writeFile('generated--README.md', markup,
        (err) =>
