@@ -29,15 +29,11 @@ ${data.contribute ? `
 ${data.test ? `
 - [Tests](#test)
 ` : ``}
-
-${data.questions ? `
+${data.github || data.email || data.question ? `
 - [Questions](#question)
 ` : ``}
-
 - [License](#license)
 ` : ``}
-
-
 
 ${data.install ? `
 ## Installation
@@ -84,14 +80,11 @@ ${data.question}
 ` : ``}
 ` : ``}
 
-
 ## License
 <a name="licence"></a>
 ${data.licence.info}
 `;
 }
 
-
 // module.exports = generateMarkdown; // this is CommonJS not ES6
 // export function generateMarkdown() // ESmodules
-  
