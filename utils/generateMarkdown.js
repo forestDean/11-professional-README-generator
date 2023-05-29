@@ -23,9 +23,6 @@ export function generateMarkdown (data) {
   ## Usage
   <a name="usage"></a>
   ${data.usage}
-  ## API
-  <a name="api"></a>
-  ${data.api}
   ## Roadmap
   <a name="roadmap"></a>
   ${data.roadmap}
@@ -40,22 +37,18 @@ export function generateMarkdown (data) {
   ${data.test}
   ## Questions
   <a name="question"></a>
-  ${data.question}
+    GitHub: https://github.com/${data.github}
+    Email: ${data.email}
+    ${data.question}
+
+
+
   ## License
   <a name="licence"></a>
   ${data.licence.info}
   `;
 
 }
-// * Description 
-// * Table of Contents 
-// * Installation 
-// * Usage 
-// * License 
-// * Contributing 
-// * Tests 
-// * Questions
-
 
     // let index = licence.findIndex(e => e.value === data.licence);
     // if (index !== -1) {
