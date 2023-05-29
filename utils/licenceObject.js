@@ -5,7 +5,10 @@ export const licence = [
     },
     {
         'name':  'MIT License',
-        'value': 'https://img.shields.io/badge/License-MIT-blue.svg'
+        'value': { 'icon': 'https://img.shields.io/badge/License-MIT-blue.svg',
+                   'details': 'MIT License info',
+                   'more': 'MIT License info'
+        }
     },
     {
         'name':  'Apache License 2.0',
