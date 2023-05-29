@@ -29,6 +29,7 @@ ${data.contribute ? `
 ${data.test ? `
 - [Tests](#test)
 ` : ``}
+
 ${data.questions ? `
 - [Questions](#question)
 ` : ``}
@@ -69,13 +70,19 @@ ${data.test ? `
 ${data.test}
 ` : ``}
 
-
+${data.github || data.email || data.question ? `
 ## Questions
 <a name="question"></a>
+${data.github ? `
 - GitHub: https://github.com/${data.github}   
-- Email: ${data.email}    
-  ${data.question}
-
+` : ``}
+${data.email ? `
+- Email: ${data.email}   
+` : ``}
+${data.question ? `
+${data.question}
+` : ``}
+` : ``}
 
 
 ## License
@@ -85,6 +92,6 @@ ${data.licence.info}
 }
 
 
-//module.exports = generateMarkdown; // this is CommonJS not ES6
-//export function generateMarkdown() // ESmodules
+// module.exports = generateMarkdown; // this is CommonJS not ES6
+// export function generateMarkdown() // ESmodules
   

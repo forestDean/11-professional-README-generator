@@ -54,6 +54,13 @@ export const questions = [
         name: 'install',
         prefix: 'INSTALLATION: ',
         waitUserInput: true,
+    },
+    {
+        type: 'input',
+        message: 'What is your GitHub username?',
+        name: 'github',
+        prefix: 'QUESTIONS: ',
+        filter: (answer) => answer.trim()
     }
  
 ];
