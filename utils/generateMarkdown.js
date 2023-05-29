@@ -14,26 +14,35 @@ export function generateMarkdown (data) {
   ${data.description}
 
   ## Table of Contents
-    [Description](#description)
-    [Installation](#installation)
+  - [Description](#description)
+  - [Installation](#installation)
 
   ## Installation
   <a name="installation"></a>
   ${data.install}
-
   ## Usage
   <a name="usage"></a>
   ${data.usage}
   ## API
+  <a name="api"></a>
   ${data.api}
   ## Roadmap
+  <a name="roadmap"></a>
   ${data.roadmap}
   ## Credits
-  ${data.credits}
-  ## Contributing 
-  ## Tests 
+  <a name="credit"></a>
+  ${data.credit}
+  ## Contributing
+  <a name="contribute"></a>
+  ${data.contribute}
+  ## Tests
+  <a name="test"></a>
+  ${data.test}
   ## Questions
+  <a name="question"></a>
+  ${data.question}
   ## License
+  <a name="licence"></a>
   ${data.licence}
   `;
 

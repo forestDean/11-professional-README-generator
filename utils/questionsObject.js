@@ -3,45 +3,62 @@ import {licence} from './licenceObject.js'; //named import
 // array of questions for user
 export const questions = [
 
-    {
-        type: 'input',
-        message: 'What is your project name?',
-        name: 'title',
-        prefix: 'TITLE: '
-        // filter: (title) => {
-        //     title.toLowerCase().split(' ')
-        //     // // .split(' ')
-        //     //.map(word) => {
-        //     .map(function(word) {
-        //         //return (word.charAt(0).toUpperCase() + word.slice(1)); 
-        //         return word.replace(word[0], word[0].toUpperCase());
-        //         //return title.join(' ');  
-        //     });
-        //      return title.join(' '); 
-
-        // }
-    },
-    {
-        type: 'input',
-        message: 'Write a brief project summary.',
-        name: 'description',
-        prefix: 'DESCRIPTION: '
-    },
-    {
-        type: 'editor',
-        message: 'Write a summary about yourself?',
-        name: 'summary',
-        waitUserInput: false,
-    },
+    // {
+    //     type: 'input',
+    //     message: 'What is your project name?',
+    //     name: 'title',
+    //     prefix: 'TITLE: ',
+    //     validate: (answer) => {
+    //         if(!answer) {
+    //             return "Please, answer the question!";
+    //         }
+    //         return true;
+    //     },
+    //     filter: (answer) => {
+    //         if(answer) {
+    //             answer = answer.trim();
+    //             answer = answer.toLowerCase().split(' ')
+    //             .map(function(answer) {; 
+    //                 return answer.replace(answer[0], answer[0].toUpperCase());
+    //             });
+    //             return answer.join(' '); 
+    //         }
+    //     }
+    // },
+    // {
+    //     type: 'input',
+    //     message: 'Write a brief project summary.',
+    //     name: 'description',
+    //     prefix: 'DESCRIPTION: ',
+    //     filter: (answer) => answer.trim(),
+    //     validate: (answer) => {
+    //         if(!answer) {
+    //             return "Please, answer the question!";
+    //         }
+    //         return true;
+    //     }
+    // },
     {
         type: 'list',
-        message: 'License',
+        message: 'Choose your license from the menu.',
         name: 'licence',
         prefix: 'LICENCE: ',
         default: 'MIT',
         choices: licence,
-        loop: true,
-        //pageSize: 14,
+        loop: false,
+        pageSize: 14,
+        filter: function( answer ) {
+            answer = "MIT extra " + answer.length;
+            //console.log('x: ' + answer);
+            //return indexOf(answer);
+            return answer;
+        },
+     },
+    // {
+    //     type: 'editor',
+    //     message: 'Write a summary about yourself?',
+    //     name: 'summary',
+    //     waitUserInput: true,
     // },
     // {
     //     type: 'input',
@@ -85,6 +102,6 @@ export const questions = [
     //     name: 'website ',
     //     default: 'https://www.'
     //     // validate:
-    }
+    //}
 
 ];

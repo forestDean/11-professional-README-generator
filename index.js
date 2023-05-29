@@ -21,7 +21,7 @@ function writeToFile(data) {
 // function to initialize program
 //function init() {
     const init = async () => {
-        console.log(chalk.white.bgGreen.bold('Welcome to the README generator...'));
+        console.log(chalk.white.bgBlue.bold('Welcome to the README generator...'));
         ui.log.write('...here we go...');
 
     inquirer
