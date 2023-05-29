@@ -6,8 +6,7 @@ export const licence = [
     {
         'name':  'MIT License',
         'value': { 'icon': 'https://img.shields.io/badge/License-MIT-blue.svg',
-                   'details': 'MIT License info',
-                   'more': 'MIT License info'
+                   'info': 'MIT License info'
         }
     },
     {
