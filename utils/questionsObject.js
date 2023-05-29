@@ -47,12 +47,20 @@ export const questions = [
         choices: licence,
         loop: false,
         pageSize: 14,
-        filter: function( answer ) {
-            answer = "MIT extra " + answer.length;
-            //console.log('x: ' + answer);
-            //return indexOf(answer);
-            return answer;
-        },
+        // filter: function( answer ) {
+        //     //answer = "MIT extra " + answer.length;
+        //     //answer = "MIT extra " + value[0];
+        //     //answer = "output: " + answer.license;
+        //     //answer = "output: " + answer.details;
+        //     answer = answer.icon + licence.indexOf(answer.icon);
+        //     answer = answer.icon;
+        //     //console.log('here')
+
+        //     //console.log(answer.license)
+        //     //console.log('x: ' + answer);
+        //     //return indexOf(answer);
+        //     return answer;
+        //},
      },
     // {
     //     type: 'editor',
@@ -64,17 +72,13 @@ export const questions = [
     //     type: 'input',
     //     message: 'What is your email address?',
     //     name: 'email',
-    //     // validate: function (email) {
-      
-    //     //     valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
-    
-    //     //     if (valid) {
-    //     //       console.log("Great job");
-    //     //         return true;
-    //     //     } else {
-    //     //         console.log(".  Please enter a valid email")
-    //     //         return false;
-    //     //     }
+    // validate: (answer) => {
+    //     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    //     if (!emailRegex.test(answer)) {
+    //       return "You have to provide a valid email address!"
+    //     }
+    //     return true
+    //   }
     // },
     // {
     //     type: 'number',

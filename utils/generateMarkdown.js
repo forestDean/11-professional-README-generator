@@ -8,7 +8,7 @@ export function generateMarkdown (data) {
   //     console.log('licenceName: ' + licenceName);
   // 
   return `# ${data.title}
-  ![licence badge](${data.licence}?style=flat-square)
+  ![licence badge](${data.licence.icon}?style=flat-square)
   ## Description
   <a name="description"></a>
   ${data.description}
@@ -43,7 +43,7 @@ export function generateMarkdown (data) {
   ${data.question}
   ## License
   <a name="licence"></a>
-  ${data.licence}
+  ${data.licence.info}
   `;
 
 }

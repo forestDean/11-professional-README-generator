@@ -1,5 +1,5 @@
 # undefined
-  ![licence badge](MIT extra undefined?style=flat-square)
+  ![licence badge](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)
   ## Description
   <a name="description"></a>
   undefined
@@ -34,5 +34,5 @@
   undefined
   ## License
   <a name="licence"></a>
-  MIT extra undefined
+  MIT License info
   
