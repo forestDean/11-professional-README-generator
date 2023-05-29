@@ -37,8 +37,8 @@ export function generateMarkdown (data) {
   ${data.test}
   ## Questions
   <a name="question"></a>
-    GitHub: https://github.com/${data.github}
-    Email: ${data.email}
+    GitHub: https://github.com/${data.github}    
+    Email: ${data.email}    
     ${data.question}
 
 
