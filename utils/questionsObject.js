@@ -61,6 +61,7 @@ export const questions = [
         message: 'Provide instructions and examples for use. Include screenshots as needed.',
         name: 'usage',
         prefix: 'USAGE: ',
+        suffix: ' Saves on editor close.',
         waitUserInput: true,
     },
     {
@@ -68,6 +69,7 @@ export const questions = [
         message: 'List ideas for future development',
         name: 'roadmap',
         prefix: 'ROADMAP: ',
+        suffix: ' Saves on editor close.',
         waitUserInput: true,
     },
     {
@@ -75,6 +77,7 @@ export const questions = [
         message: 'List your collaborators, if any, with links to their GitHub profiles.\n   If you used any third-party assets that require attribution, list the creators with links.',
         name: 'credit',
         prefix: 'CREDITS: ',
+        suffix: ' Saves on editor close.',
         waitUserInput: true,
     },
     {
@@ -82,6 +85,7 @@ export const questions = [
         message: 'If you created an application or package and would like other developers to contribute it,\n   add guidelines for how to do so. ',
         name: 'contribute',
         prefix: 'CONTRIBUTING: ',
+        suffix: ' Saves on editor close.',
         waitUserInput: true,
     },
     {
@@ -89,6 +93,7 @@ export const questions = [
         message: 'Write tests for your application. Then provide examples on how to run them.',
         name: 'test',
         prefix: 'TESTS: ',
+        suffix: ' Saves on editor close.',
         waitUserInput: true,
     },
     {
@@ -116,6 +121,7 @@ export const questions = [
         message: 'Write instructions on how to reach you with additional questions',
         name: 'questions',
         prefix: 'QUESTIONS: ',
+        suffix: ' Saves on editor close.',
         waitUserInput: true,
     }
 ];
