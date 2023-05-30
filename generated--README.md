@@ -1,32 +1,24 @@
-# Data Question
-![licence badge](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=flat-square)
+# Chalk
+![licence badge](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)
 ## Description
 <a name="description"></a>
-blah
+bla
 
 
 ## Table of Contents
 - [Description](#description)
 
-- [Installation](#installation)
 
 
 
 
 
 
-
-
+- [Questions](#question)
 
 - [License](#license)
 
 
-
-
-
-## Installation
-<a name="installation"></a>
-ffffffffffffffffffff
 
 
 
@@ -41,10 +33,11 @@ ffffffffffffffffffff
 - GitHub: https://github.com/forestdean   
 
 
+- Email: email@forestdean.com   
 
 
 
 
 ## License
 <a name="licence"></a>
-Apache License 2.0 - A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code
+MIT License - A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
