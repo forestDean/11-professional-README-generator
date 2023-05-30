@@ -18,7 +18,7 @@ When creating an open source project on GitHub, it’s important to have a high-
 <a name="installation"></a>
 Directory must be downloaded to a Node.js environment.  
 Relevent dependancies can be installed with `npm install`   
-The app is initialise with the terminal command `node index.js`
+The app is initialised with the terminal command `node index.js`
 
 ## Usage
 <a name="usage"></a>
