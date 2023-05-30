@@ -1,6 +1,6 @@
 // function to generate markdown for README
 export function generateMarkdown (data) {
-//console.log('data.length: ' + Object.keys(data).length);
+// console.log('data.length: ' + Object.keys(data).length);
 
 return `# ${data.title}
 ![licence badge](${data.licence.icon}?style=flat-square)
