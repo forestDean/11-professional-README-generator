@@ -38,7 +38,7 @@ A sample **generated--README.md** can be found in the root directory.
 - progress bar with `inquirer.ui.BottomBar`
 - improve terminal styling
 - internal text editor
-- store licence badges locally
+- store license badges locally
 
 ## Credits
 <a name="credit"></a>
