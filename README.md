@@ -1,7 +1,7 @@
 # Professional README Generator
 ![licence badge](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)
 ![node badge](https://img.shields.io/badge/NodeJS-v.16.18.0-8cc84b.svg?logo=node&style=flat-square)
-![node badge](https://img.shields.io/badge/Node-v.16.18.0?style=flat&color=8cc84b)
+![node badge](https://img.shields.io/badge/NodeJS-v.16.18.0?style=flat&color=8cc84b)
 
 ## Description
 <a name="description"></a>
